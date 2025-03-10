@@ -1,0 +1,36 @@
+# YouTube Fact-Checker with Gemini Flash 2.0
+
+```
+youtube-factchecker/
+│
+├── manifest.json                # Extension manifest file
+│
+├── background/
+│   ├── background.js            # Background script for API handling
+│   └── api-service.js           # Gemini API communication service
+│
+├── content/
+│   ├── content.js               # Main content script for YouTube pages
+│   ├── media-capture.js         # Audio/video capture functionality
+│   ├── speech-processor.js      # Speech-to-text processing
+│   ├── frame-processor.js       # Video frame processing
+│   └── claim-extractor.js       # Extract claims from transcribed text
+│
+├── fact-checking/
+│   ├── fact-checker.js          # Core fact-checking logic
+│   ├── sources-manager.js       # Manages and formats source citations
+│   └── confidence-calculator.js # Calculates confidence levels for facts
+│
+├── ui/
+│   ├── overlay.js               # UI overlay logic
+│   ├── overlay.html             # HTML for the overlay
+│   ├── overlay.css              # Styling for the overlay
+│   ├── sidebar.js               # Sidebar UI component
+│   ├── sidebar.html             # HTML for the sidebar
+│   └── sidebar.css              # Styling for the sidebar
+│
+└── utils/
+    ├── youtube-utils.js         # YouTube-specific utilities
+    ├── storage-manager.js       # Manages extension storage
+    └── logger.js                # Logging utility
+```
