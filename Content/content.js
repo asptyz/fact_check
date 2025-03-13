@@ -302,11 +302,7 @@ function injectUI() {
   
   const controls = document.createElement('div');
   controls.className = 'fact-checker-controls';
-  
-  const toggleButton = document.createElement('button');
-  toggleButton.id = 'toggle-fact-checker';
-  toggleButton.textContent = 'Disable';
-  controls.appendChild(toggleButton);
+q
   
   header.appendChild(controls);
   overlay.appendChild(header);
